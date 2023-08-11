@@ -8,14 +8,32 @@ When a user ends up in a "detached head" state, this is a scary situation, but a
 
 ## The task
 
-1. Run `git status` and `git log --oneline --graph --all` to see what is going on.
-2. Restore normalcy in this repository by moving to `master`
+1. Run `git status` and `git log --oneline --graph --all` to see what is going on.<br><br>
 
-Note that this task might seem more confusing if you did not run `setup.sh` in your terminal.
+`
+git status
+HEAD detached at e55317d
 
-We want to have a branch called `the-beginning` that is made from the first commit with message `A`. 
+ git log --oneline --graph --all
+* f7620ad (master) D
+* 094df57 C
+* ce40d8c B
+* e55317d (HEAD) A
 
-3. Can you do this by first causing a detached head?
+`
+<br><br>
+2. Restore normalcy in this repository by moving to `master` `using git checkout master`<br><br>
+
+Note that this task might seem more confusing if you did not run `setup.sh` in your terminal.<br><br>
+
+We want to have a branch called `the-beginning` that is made from the first commit with message `A`.<br><br>
+
+3. Can you do this by first causing a detached head?<br><br>
+
+`
+1- git checkout e55317d
+2- git checkout -b "the-beginning"
+`<br><br>
 
 ## Useful commands
 
