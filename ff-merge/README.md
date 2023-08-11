@@ -17,15 +17,15 @@ On branch feature/uppercase
 nothing to commit, working tree clean
 `
 <br><br>
-4. Edit the greeting.txt to contain an uppercase greeting
-5. Add `greeting.txt` files to staging area and commit
+4. Edit the greeting.txt to contain an uppercase greeting<br>
+5. Add `greeting.txt` files to staging area and commit<br>
 6. What is the output of `git branch`?
 ` * feature/uppercase
   master
 `<br><br>
 7. What is the output of `git log --oneline --graph --all`
 
-   *Remember: You want to update the master branch so it also has all the changes currently on the feature branch. The command 'git merge [branch name]' takes one branch as argument from which it takes changes. The branch pointed to by HEAD (currently checked out branch) is then updated to also include these changes.*
+   *Remember: You want to update the master branch so it also has all the changes currently on the feature branch. The command 'git merge [branch name]' takes one branch as argument from which it takes changes. The branch pointed to by HEAD (currently checked out branch) is then updated to also include these changes.*<br><br>
 `* f1f9370 (HEAD -> feature/uppercase) adding greeting file
 * 3fcbe6b (master) Add content to greeting.txt
 * 88ffd30 Add file greeting.txt
