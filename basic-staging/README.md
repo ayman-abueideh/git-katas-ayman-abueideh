@@ -34,7 +34,7 @@ index d00491f..0cfbf08 100644
 -1
 +2
 `
-<br>
+<br><br>
 4. What does `git diff --staged` tell you?  why is this blank? ` it prints nothing because nothing added to the stage area`
 5. Run `git add file.txt` to stage your changes from the working directory.
 6. What does `git diff` tell you? ` nothing `
@@ -49,7 +49,7 @@ index d00491f..0cfbf08 100644
 -1
 +2
 `
-<br>
+<br><br>
 8. Overwrite the content in `file.txt`: `echo 3 > file.txt` to change the state of your file in the working directory (or `sc file.txt '3'` in PowerShell).
 9. What does `git diff` tell you? <br>
 
@@ -62,7 +62,7 @@ index 0cfbf08..00750ed 100644
 -2
 +3
 `
-<br>
+<br><br>
 10. What does `git diff --staged` tell you? <br>
 
 `
@@ -74,7 +74,7 @@ index d00491f..0cfbf08 100644
 -1
 +2
 `
-<br>
+<br><br>
 
 11. Explain what is happening ` when we run git diff it compares the changes with the staging area but when we add -- staging it compares staging changes with the latest commit changes`
 12. Run `git status` and observe that `file.txt` are present twice in the output. `correct it appeared twice`
@@ -88,7 +88,7 @@ Changes not staged for commit:
   (use "git restore <file>..." to discard changes in working directory)
         modified:   file.txt
 `
-<br>
+<br><br>
 15. Stage the change and make a commit
 16. What does the log look like? <br>
 
@@ -97,7 +97,7 @@ git commit -m "add file.txt"
 [master df05cae] add file.txt
  1 file changed, 1 insertion(+), 1 deletion(-)
 `
-<br>
+<br><br>
 17. Overwrite the content in `file.txt`: `echo 4 > file.txt` (or `sc file.txt '4'` in PowerShell)
 18. What is the content of `file.txt`? `4`
 19. What does `git status` tell us? <br>
@@ -109,7 +109,7 @@ Changes not staged for commit:
   (use "git restore <file>..." to discard changes in working directory)
         modified:   file.txt
 `
-<br>
+<br><br>
 20. Run `git restore file.txt`
 21. What is the content of `file.txt`? `3`
 22. What does `git status` tell us? `nothing`
